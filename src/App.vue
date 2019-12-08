@@ -1,20 +1,27 @@
 <template>
 	<div id="app">
-		<b-navbar toggleable="lg" type="dark" sticky="true">
-			<b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-			<b-navbar-brand to="/">Michael Schneider</b-navbar-brand>
-			<b-collapse id="nav-collapse" is-nav>
-				<b-navbar-nav>
-					<b-nav-item>
-						<b-link to="/about" router-tag="li">About</b-link>
-					</b-nav-item>
-					<b-nav-item>
-						<b-link to="/projects" router-tag="li">Projects</b-link>
-					</b-nav-item>
-				</b-navbar-nav>
-			</b-collapse>
-		</b-navbar>
-		<router-view />
+		<header>
+			<b-navbar toggleable="lg" type="light" sticky="true">
+				<b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+				<b-navbar-brand to="/">Michael Schneider</b-navbar-brand>
+				<b-collapse id="nav-collapse" is-nav>
+					<b-navbar-nav>
+						<b-nav-item>
+							<b-link to="/about" router-tag="li">About</b-link>
+						</b-nav-item>
+						<b-nav-item>
+							<b-link to="/projects" router-tag="li">Projects</b-link>
+						</b-nav-item>
+					</b-navbar-nav>
+				</b-collapse>
+			</b-navbar>
+		</header>
+		<div class="container">
+			<router-view />
+		</div>
+		<footer>
+			<div class="w-auto p-3 fixed-bottom">Michael Schneider's Page &copy;2019</div>
+		</footer>
 	</div>
 </template>
 
@@ -25,12 +32,26 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~bootstrap-vue/dist/bootstrap-vue.css";
+
 body {
-	background-color: beige;
+	background-color: mintcream !important;
+	min-height: 300px;
 }
 
 .navbar {
-	background-color: olive;
+	background-color: mediumseagreen;
+	font-size: 125%;
+}
+
+a.navbar-brand {
+	font-size: 125%;
+}
+
+div.fixed-bottom {
+	background-color: mediumseagreen;
+	text-align: center;
 }
 </style>
