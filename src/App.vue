@@ -7,9 +7,6 @@
 				<b-collapse id="nav-collapse" is-nav>
 					<b-navbar-nav>
 						<b-nav-item>
-							<b-link to="/about" router-tag="li">About</b-link>
-						</b-nav-item>
-						<b-nav-item>
 							<b-link to="/projects" router-tag="li">Projects</b-link>
 						</b-nav-item>
 					</b-navbar-nav>
@@ -20,7 +17,7 @@
 			<router-view />
 		</div>
 		<footer>
-			<div class="w-auto p-3 fixed-bottom">Michael Schneider's Page &copy;2019</div>
+			<div class="w-auto p-3 fixed-bottom">Michael Schneider's Portfolio &copy;2019</div>
 		</footer>
 	</div>
 </template>
