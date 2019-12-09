@@ -1,7 +1,18 @@
 <template>
 	<div class="projects">
-		<h1>Some projects I've worked on...</h1>
-		<p>Look at all this stuff.</p>
+		<b-jumbotron bg-variant="info" text-variant="white">
+			<template v-slot:header>Projects</template>
+
+			<hr class="my-4" />
+
+			<div id="content">
+				<b-card></b-card>
+				<b-card></b-card>
+				<b-card></b-card>
+				<b-card></b-card>
+				<b-card></b-card>
+			</div>
+		</b-jumbotron>
 	</div>
 </template>
 
@@ -12,4 +23,12 @@ export default {
 </script>
 
 <style>
+.projects {
+	padding-top: 10px;
+}
+
+#content {
+	background-color: mintcream;
+	border-radius: 5px;
+}
 </style>

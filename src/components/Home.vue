@@ -94,9 +94,6 @@ export default {
 	border-radius: 5px;
 }
 
-#info {
-}
-
 ul.nav-tabs {
 	background-color: mediumseagreen;
 }
