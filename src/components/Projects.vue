@@ -8,20 +8,23 @@
 			<div id="content">
 				<b-card>
 					<h5 class="mt-0">
-						Pizza Maker WPF
-						<b-badge>C#</b-badge>
-						<b-badge>WPF</b-badge>
+						<b-badge id="padding" variant="success">Complete</b-badge>Pizza Maker WPF
 					</h5>
+					<b-badge id="padding">C#</b-badge>
+					<b-badge id="padding">WPF</b-badge>
 					<p>A simple WPF application to demonstrate the use of multiple OOP design patterns.</p>
 
 					<b-button v-b-toggle="'pizza'">Project Details</b-button>
+					<b-link href="https://github.com/Cellor425/Pizza-Maker-Program-2018-OOP-Design">
+						<b-img src="../assets/github.png" style="max-height: 25px; padding-left: 5px;"></b-img>
+					</b-link>
 					<b-collapse id="pizza" class="mt-2">
 						<b-card>
-							<b-button v-b-toggle="'class-diagram-pizza'" size="sm">Class Diagram</b-button>
+							<b-button id="padding" v-b-toggle="'class-diagram-pizza'" size="sm">Class Diagram</b-button>
 							<b-collapse id="class-diagram-pizza" class="mt-2">
 								<b-img src="../assets/PizzaMaker.png" style="width: 100%; border: 1px solid black;"></b-img>
 							</b-collapse>
-							<b-button v-b-toggle="'info-pizza'" size="sm">Techincal Information</b-button>
+							<b-button id="padding" v-b-toggle="'info-pizza'" size="sm">Techincal Information</b-button>
 							<b-collapse id="info-pizza" class="mt-2">
 								<h6>Explaination</h6>
 								<p>
@@ -62,25 +65,59 @@
 						</b-card>
 					</b-collapse>
 				</b-card>
+
+				<!-- Media Monkey Card -->
 				<b-card>
 					<h5 class="mt-0">
-						Media Monkey
-						<b-badge>C#</b-badge>
-						<b-badge>JavaScript</b-badge>
-						<b-badge>Razor</b-badge>
-						<b-badge>.NET Core</b-badge>
-						<b-badge>Node.js</b-badge>
+						<b-badge id="padding" variant="success">Complete</b-badge>Media Monkey
 					</h5>
-					<p>A simple WPF application to demonstrate the use of multiple OOP design patterns.</p>
+					<b-badge id="padding">C#</b-badge>
+					<b-badge id="padding">JavaScript</b-badge>
+					<b-badge id="padding">.NET Core</b-badge>
+					<b-badge id="padding">Node.js</b-badge>
+					<b-badge id="padding">FTP</b-badge>
+					<p>A .NET Core MVC web application developed over 3 months with a team of 3 developers.</p>
 					<b-button v-b-toggle="'mediamonkey'">Project Details</b-button>
+					<b-link href="https://github.com/Cellor425/MM">
+						<b-img src="../assets/github.png" style="max-height: 25px; padding-left: 5px;"></b-img>
+					</b-link>
 					<b-collapse id="mediamonkey" class="mt-2">
 						<b-card>
-							<b-button v-b-toggle="'mm-inner-1'" size="sm">Site Logo</b-button>
+							<b-button
+								id="padding"
+								href="https://mediamonkey.mjschneider1.com/"
+								style="background-color: orange; color: black;"
+								size="sm"
+							>To Media Monkey</b-button>
+							<b-button id="padding" v-b-toggle="'mm-inner-1'" size="sm">Site Logo</b-button>
 							<b-collapse id="mm-inner-1" class="mt-2">
 								<b-img src="../assets/Logo.png" style="max-width:300px; border: 1px solid black;"></b-img>
 							</b-collapse>
+							<b-button id="padding" v-b-toggle="'mm-inner-2'" size="sm">Description</b-button>
+							<b-collapse id="mm-inner-2" class="mt-2">
+								<h6>Product MVP at Start</h6>
+								<h6>Process and Technologies</h6>
+								<h6>My Role</h6>
+								<h6>Lessons Learned</h6>
+							</b-collapse>
 						</b-card>
 					</b-collapse>
+				</b-card>
+				<b-card>
+					<h5 class="mt-0">
+						<b-badge id="padding" variant="warning">In Dev</b-badge>Backup Saves Console
+					</h5>
+					<b-badge id="padding">C#</b-badge>
+					<b-badge id="padding">.NET Framework</b-badge>
+					<p>A .NET Framework console application to backup remote save files to a new location.</p>
+				</b-card>
+				<b-card>
+					<h5 class="mt-0">
+						<b-badge id="padding" variant="warning">In Dev</b-badge>Landing Page
+					</h5>
+					<b-badge id="padding">JavaScript</b-badge>
+					<b-badge id="padding">Vue CLI</b-badge>
+					<p>A .NET Framework console application to backup remote save files to a new location.</p>
 				</b-card>
 			</div>
 		</b-jumbotron>
@@ -103,5 +140,9 @@ export default {
 	background-color: mintcream;
 	color: black;
 	border-radius: 5px;
+}
+
+#padding {
+	margin: 0 1px 0 1px;
 }
 </style>
