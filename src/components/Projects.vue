@@ -95,10 +95,25 @@
 							</b-collapse>
 							<b-button id="padding" v-b-toggle="'mm-inner-2'" size="sm">Description</b-button>
 							<b-collapse id="mm-inner-2" class="mt-2">
-								<h6>Product MVP at Start</h6>
+								<h6>Project Objective</h6>
+								<p>
+									The objective of this project was to make a video hosting and sharing platform that would allow users
+									to create a profile, upload and manage videos, comment on videos, and search for specific videos.
+								</p>
 								<h6>Process and Technologies</h6>
+								<p>
+									We were given 15 weeks, which consisted of five 3 week sprint cycles, to complete development and deliver a final product.
+									The goal for each sprint was to develop a core piece of functionality for the website such as video upload and profile creation.
+									The main framework that the project was built on is ASP.NET Core 2.1 which connected to a remote MSSQL database on the backend and
+									served pages using Razor syntax.
+								</p>
 								<h6>My Role</h6>
-								<h6>Lessons Learned</h6>
+								<p>
+									I was given the role of business logic tier developer, however, I contributed in each part of the project stack from backend mangement to front end design.
+									The main functionalities that I worked on was the features around the handling on video files. This involved allowing a user to upload a video
+									file and store it on a remote FTP server as well as creating database records connected to that file. As stated the method I chose to handle video file storage
+									as through an FTP server in which the file location was stored in the database with related information.
+								</p>
 							</b-collapse>
 						</b-card>
 					</b-collapse>
