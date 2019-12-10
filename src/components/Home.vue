@@ -17,7 +17,7 @@
 					fill
 				>
 					<b-tab no-body title="Contact Info" active>
-						<b-container fluid>
+						<b-container fluid style="max-width: 600px;">
 							<b-row>
 								<b-col style="padding-bottom: 15px;">
 									<b-card title="Email" style="max-height:125px;">
@@ -26,14 +26,14 @@
 									<b-card title="Phone" style="max-height:125px;">
 										<b-card-text>(715)432-9101</b-card-text>
 									</b-card>
-									<b-card title="LinkedIn" style="max-height:125px;">
-										<b-button
-											variant="primary"
-											href="https://www.linkedin.com/in/michael-schneider-145250141/"
-										>To LinkedIn</b-button>
-									</b-card>
-									<b-card title="Github" style="max-height:125px;">
-										<b-button href="https://github.com/Cellor425">To Github</b-button>
+									<b-card style="max-height:125px;">
+										<b-link href="https://www.linkedin.com/in/michael-schneider-145250141/">
+											<b-img src="../assets/linkedin.png" style="max-height: 40px;"></b-img>
+										</b-link>
+										<p></p>
+										<b-link href="https://github.com/Cellor425">
+											<b-img src="../assets/github.png" style="max-height: 35px;"></b-img>
+										</b-link>
 									</b-card>
 								</b-col>
 							</b-row>
@@ -43,12 +43,12 @@
 						<b-container fluid>
 							<b-row>
 								<b-col style="max-width: 300px; margin: auto">
-									<b-img :src="require('../assets/profile pic.jpg')" fluid></b-img>
+									<b-img src="../assets/profile pic.jpg" fluid></b-img>
 								</b-col>
 							</b-row>
 							<b-row>
 								<b-col>
-									<b-card title="About Me">
+									<b-card title="About Me" style="max-width: 600px; margin: auto;">
 										<b-card-text>
 											Experienced Team Trainer with a demonstrated history of working in the
 											retail industry. Extensive experience in working with computer hardware. Skills
@@ -63,10 +63,10 @@
 						</b-container>
 					</b-tab>
 					<b-tab no-body title="Resume">
-						<b-card-img bottom :src="require('../assets/Resume.png')"></b-card-img>
+						<b-card-img bottom src="../assets/Resume.png"></b-card-img>
 					</b-tab>
 					<b-tab no-body title="Cover Letter">
-						<b-card-img bottom :src="require('../assets/CoverLetter.png')"></b-card-img>
+						<b-card-img bottom src="../assets/CoverLetter.png"></b-card-img>
 					</b-tab>
 				</b-tabs>
 			</div>
