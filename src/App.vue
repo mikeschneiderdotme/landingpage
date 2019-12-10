@@ -7,6 +7,9 @@
 				<b-collapse id="nav-collapse" is-nav>
 					<b-navbar-nav>
 						<b-nav-item>
+							<b-link to="/" router-tag="li">Home</b-link>
+						</b-nav-item>
+						<b-nav-item>
 							<b-link to="/projects" router-tag="li">Projects</b-link>
 						</b-nav-item>
 					</b-navbar-nav>
