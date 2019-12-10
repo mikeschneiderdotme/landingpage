@@ -7,6 +7,7 @@
 
 			<div id="content">
 				<b-card>
+					<!-- Pizza Maker WPF Card -->
 					<h5 class="mt-0">
 						<b-badge id="padding" variant="success">Complete</b-badge>Pizza Maker WPF
 					</h5>
@@ -21,10 +22,10 @@
 					<b-collapse id="pizza" class="mt-2">
 						<b-card>
 							<b-button id="padding" v-b-toggle="'class-diagram-pizza'" size="sm">Class Diagram</b-button>
+							<b-button id="padding" v-b-toggle="'info-pizza'" size="sm">Technical Information</b-button>
 							<b-collapse id="class-diagram-pizza" class="mt-2">
 								<b-img src="../assets/PizzaMaker.png" style="width: 100%; border: 1px solid black;"></b-img>
 							</b-collapse>
-							<b-button id="padding" v-b-toggle="'info-pizza'" size="sm">Techincal Information</b-button>
 							<b-collapse id="info-pizza" class="mt-2">
 								<h6>Explaination</h6>
 								<p>
@@ -90,10 +91,10 @@
 								size="sm"
 							>To Media Monkey</b-button>
 							<b-button id="padding" v-b-toggle="'mm-inner-1'" size="sm">Site Logo</b-button>
+							<b-button id="padding" v-b-toggle="'mm-inner-2'" size="sm">Description</b-button>
 							<b-collapse id="mm-inner-1" class="mt-2">
 								<b-img src="../assets/Logo.png" style="max-width:300px; border: 1px solid black;"></b-img>
 							</b-collapse>
-							<b-button id="padding" v-b-toggle="'mm-inner-2'" size="sm">Description</b-button>
 							<b-collapse id="mm-inner-2" class="mt-2">
 								<h6>Project Objective</h6>
 								<p>
@@ -118,14 +119,28 @@
 						</b-card>
 					</b-collapse>
 				</b-card>
+
+				<!-- Backup Saves Console Card -->
 				<b-card>
 					<h5 class="mt-0">
 						<b-badge id="padding" variant="warning">In Dev</b-badge>Backup Saves Console
 					</h5>
 					<b-badge id="padding">C#</b-badge>
 					<b-badge id="padding">.NET Framework</b-badge>
+					<b-link href="https://github.com/Cellor425/BackupSaves">
+						<b-img src="../assets/github.png" style="max-height: 25px; padding-left: 5px;"></b-img>
+					</b-link>
 					<p>A .NET Framework console application to backup remote save files to a new location.</p>
+					<b-button v-b-toggle="'backup'">Project Details</b-button>
+					<b-collapse id="backup" class="mt-2">
+						<b-card>
+							<h6>Description</h6>
+							<p>Make a description idiot</p>
+						</b-card>
+					</b-collapse>
 				</b-card>
+
+				<!-- Landing Page Card -->
 				<b-card>
 					<h5 class="mt-0">
 						<b-badge id="padding" variant="warning">In Dev</b-badge>Landing Page
@@ -133,6 +148,16 @@
 					<b-badge id="padding">JavaScript</b-badge>
 					<b-badge id="padding">Vue CLI</b-badge>
 					<p>A .NET Framework console application to backup remote save files to a new location.</p>
+					<b-button v-b-toggle="'landing'">Project Details</b-button>
+					<b-link href="https://github.com/Cellor425/landingpage">
+						<b-img src="../assets/github.png" style="max-height: 25px; padding-left: 5px;"></b-img>
+					</b-link>
+					<b-collapse id="landing">
+						<b-card>
+							<h6>Description</h6>
+							<p>Make a description idiot</p>
+						</b-card>
+					</b-collapse>
 				</b-card>
 			</div>
 		</b-jumbotron>
