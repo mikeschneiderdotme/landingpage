@@ -9,7 +9,7 @@
 				<b-card>
 					<!-- Pizza Maker WPF Card -->
 					<h5 class="mt-0">
-						<b-badge id="padding" variant="success">Complete</b-badge>Pizza Maker WPF
+						<b-badge id="padding" variant="success">Dev Ended</b-badge>Pizza Maker WPF
 					</h5>
 					<b-badge id="padding">C#</b-badge>
 					<b-badge id="padding">WPF</b-badge>
@@ -70,7 +70,7 @@
 				<!-- Media Monkey Card -->
 				<b-card>
 					<h5 class="mt-0">
-						<b-badge id="padding" variant="success">Complete</b-badge>Media Monkey
+						<b-badge id="padding" variant="success">Dev Ended</b-badge>Media Monkey
 					</h5>
 					<b-badge id="padding">C#</b-badge>
 					<b-badge id="padding">JavaScript</b-badge>
@@ -127,15 +127,38 @@
 					</h5>
 					<b-badge id="padding">C#</b-badge>
 					<b-badge id="padding">.NET Framework</b-badge>
+					<p>A .NET Framework console application to backup remote save files to a new location.</p>
+					<b-button v-b-toggle="'backup'">Project Details</b-button>
 					<b-link href="https://github.com/Cellor425/BackupSaves">
 						<b-img src="../assets/github.png" style="max-height: 25px; padding-left: 5px;"></b-img>
 					</b-link>
-					<p>A .NET Framework console application to backup remote save files to a new location.</p>
-					<b-button v-b-toggle="'backup'">Project Details</b-button>
 					<b-collapse id="backup" class="mt-2">
 						<b-card>
 							<h6>Description</h6>
-							<p>Make a description idiot</p>
+							<p>
+								The project started as a simple console app to grab remote save files from my steam and uplay games and store them in
+								an alternate local location. I wanted to do this because I had recently lost all my "cloud" saves when I reset my
+								windows install and the cloud backups didnt make it.
+							</p>
+							<p>
+								The program contains a simple input menu and single key command interface that allows a user to run the saves,
+								reset the window, and exit the application. In it's current state the application has an api utility that accesses the
+								steam api service to get my owned game ids and runs a directory copy with robust error handling and logging. Once complete,
+								the backup returns a summary to the window.
+							</p>
+							<h6>Technologies</h6>
+							<p>
+								For this project, I needed use of windows file manipulation which needed .NET Framework. I usually like to use .NET Core for
+								the cross platform support. I made the program in Visual Studio 2019 and includes the use of the Newtonsoft.Json nuget package
+								for deserializing the request to the steam api server.
+							</p>
+							<h6>Future Developmment</h6>
+							<p>
+								Future development for the project would be to include a config file so that onther users can input their steam id and modify the location
+								for backups or if their steam and uplay are installed in different locations on their machines. I would also like to clean up the error checking
+								as it currently counts games that I don't have saves for as errors in the backup process. This includes a better summary in the console window. I
+								would also like to add more robust commands to the console for my functionality such as listing your games, backing up a single game, ect.
+							</p>
 						</b-card>
 					</b-collapse>
 				</b-card>
@@ -155,7 +178,27 @@
 					<b-collapse id="landing">
 						<b-card>
 							<h6>Description</h6>
-							<p>Make a description idiot</p>
+							<p>
+								This project was about making a SAP(Single Page Applicaiton) using a popular front end framework so that I had a centralized location
+								to promote myself as a developer from. Initially I was going to use React for the front end but decided I didn't
+								need the overcomplexity it brings and so Vue was what I went with.
+							</p>
+							<p>
+								The website contains two main component views: Home and Projects. The home component has a tab structure with a quick view
+								of my resume and cover letter, as well as, links to my work and how users can contact me. The project page has a detailed
+								list of some, but not all, of my projects I have worked on over the years.
+							</p>
+							<h6>Technologies</h6>
+							<p>
+								As stated in the description, I used Vue CLI to generate the scaffolding for my SAP. I also made heavy use of the Bootstrap-Vue package
+								in my components so that I could get a respectable looking page up quickly.
+							</p>
+							<h6>Future Developmment</h6>
+							<p>
+								Future additions to the page will include a way for users to reach me through the site via form submission of some sort, and for users to be able to download
+								a PDF version of my resume and cover letter if users want. I also want to make the project cards reusable so I can add more of my projects. Also a way to filter
+								and search the projects would be nice.
+							</p>
 						</b-card>
 					</b-collapse>
 				</b-card>
