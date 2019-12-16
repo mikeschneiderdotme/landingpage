@@ -63,7 +63,11 @@
 						</b-container>
 					</b-tab>
 					<b-tab no-body title="Resume">
-						<!-- https://docs.google.com/document/d/1GYQjrvCGHBvwQkeFoc1WO2fHwS_gOn5ydX4TLVBJtXQ/edit?usp=sharing -->
+						<!-- File_Id = 1GYQjrvCGHBvwQkeFoc1WO2fHwS_gOn5ydX4TLVBJtXQ -->
+						<b-button
+							href="https://docs.google.com/document/d/1GYQjrvCGHBvwQkeFoc1WO2fHwS_gOn5ydX4TLVBJtXQ/export?download&id=1GYQjrvCGHBvwQkeFoc1WO2fHwS_gOn5ydX4TLVBJtXQ"
+							size="sm"
+						>Download</b-button>
 						<b-embed
 							type="iframe"
 							aspect="4by3"
@@ -72,7 +76,11 @@
 						></b-embed>
 					</b-tab>
 					<b-tab no-body title="Cover Letter">
-						<!-- <iframe src="https://docs.google.com/document/d/e/2PACX-1vSIWFJRc8tfn0mEeaGk1jSQGWSnmHc_kXuMD4AN3eICN7e415UFbkgTlsRdFW-RMJ8lAiamyeZm1Fnm/pub?embedded=true"></iframe> -->
+						<!-- Fild_Id = https://docs.google.com/document/d/1eZJARijNZgjgud4gAIJQ4eWZIT5KgEwfSExhFnkmI7I/edit?usp=sharing -->
+						<b-button
+							href="https://docs.google.com/document/d/1eZJARijNZgjgud4gAIJQ4eWZIT5KgEwfSExhFnkmI7I/export?download&id=1eZJARijNZgjgud4gAIJQ4eWZIT5KgEwfSExhFnkmI7I"
+							size="sm"
+						>Download</b-button>
 						<b-embed
 							type="iframe"
 							aspect="4by3"
