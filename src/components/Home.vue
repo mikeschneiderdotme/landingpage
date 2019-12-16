@@ -72,7 +72,13 @@
 						></b-embed>
 					</b-tab>
 					<b-tab no-body title="Cover Letter">
-						<b-card-img bottom src="../assets/CoverLetter.png"></b-card-img>
+						<!-- <iframe src="https://docs.google.com/document/d/e/2PACX-1vSIWFJRc8tfn0mEeaGk1jSQGWSnmHc_kXuMD4AN3eICN7e415UFbkgTlsRdFW-RMJ8lAiamyeZm1Fnm/pub?embedded=true"></iframe> -->
+						<b-embed
+							type="iframe"
+							aspect="4by3"
+							src="https://docs.google.com/document/d/e/2PACX-1vSIWFJRc8tfn0mEeaGk1jSQGWSnmHc_kXuMD4AN3eICN7e415UFbkgTlsRdFW-RMJ8lAiamyeZm1Fnm/pub?embedded=true"
+							allowfullscreen
+						></b-embed>
 					</b-tab>
 				</b-tabs>
 			</div>
