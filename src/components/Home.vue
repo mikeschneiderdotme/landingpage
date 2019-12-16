@@ -63,7 +63,13 @@
 						</b-container>
 					</b-tab>
 					<b-tab no-body title="Resume">
-						<b-card-img bottom src="../assets/Resume.png"></b-card-img>
+						<!-- https://docs.google.com/document/d/1GYQjrvCGHBvwQkeFoc1WO2fHwS_gOn5ydX4TLVBJtXQ/edit?usp=sharing -->
+						<b-embed
+							type="iframe"
+							aspect="4by3"
+							src="https://docs.google.com/document/d/e/2PACX-1vQWL_Pfkyn3nG6RB-Gbt6JU_uq89_vDZQvzTtmSHCU9W5ca2wYRoSF3gdHTgu-NLpDYgNp7xF3qiHs7/pub?embedded=true"
+							allowfullscreen
+						></b-embed>
 					</b-tab>
 					<b-tab no-body title="Cover Letter">
 						<b-card-img bottom src="../assets/CoverLetter.png"></b-card-img>
