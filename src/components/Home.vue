@@ -65,9 +65,9 @@
 					<b-tab no-body title="Resume">
 						<!-- File_Id = 1GYQjrvCGHBvwQkeFoc1WO2fHwS_gOn5ydX4TLVBJtXQ -->
 						<b-button
-							href="https://docs.google.com/document/d/1GYQjrvCGHBvwQkeFoc1WO2fHwS_gOn5ydX4TLVBJtXQ/export?download&id=1GYQjrvCGHBvwQkeFoc1WO2fHwS_gOn5ydX4TLVBJtXQ"
+							href="https://docs.google.com/document/d/1GYQjrvCGHBvwQkeFoc1WO2fHwS_gOn5ydX4TLVBJtXQ/export?format=pdf"
 							size="sm"
-						>Download</b-button>
+						>Download PDF</b-button>
 						<b-embed
 							type="iframe"
 							aspect="4by3"
@@ -78,9 +78,9 @@
 					<b-tab no-body title="Cover Letter">
 						<!-- Fild_Id = https://docs.google.com/document/d/1eZJARijNZgjgud4gAIJQ4eWZIT5KgEwfSExhFnkmI7I/edit?usp=sharing -->
 						<b-button
-							href="https://docs.google.com/document/d/1eZJARijNZgjgud4gAIJQ4eWZIT5KgEwfSExhFnkmI7I/export?download&id=1eZJARijNZgjgud4gAIJQ4eWZIT5KgEwfSExhFnkmI7I"
+							href="https://docs.google.com/document/d/1eZJARijNZgjgud4gAIJQ4eWZIT5KgEwfSExhFnkmI7I/export?format=pdf"
 							size="sm"
-						>Download</b-button>
+						>Download PDF</b-button>
 						<b-embed
 							type="iframe"
 							aspect="4by3"
