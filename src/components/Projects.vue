@@ -75,7 +75,7 @@
 					<b-badge id="padding">C#</b-badge>
 					<b-badge id="padding">JavaScript</b-badge>
 					<b-badge id="padding">.NET Core</b-badge>
-					<b-badge id="padding">Node.js</b-badge>
+					<b-badge id="padding">Entity Framework</b-badge>
 					<b-badge id="padding">FTP</b-badge>
 					<p>A .NET Core MVC web application developed over 3 months with a team of 3 developers.</p>
 					<b-button v-b-toggle="'mediamonkey'">Project Details</b-button>
@@ -199,6 +199,54 @@
 								a PDF version of my resume and cover letter if users want. I also want to make the project cards reusable so I can add more of my projects. Also a way to filter
 								and search the projects would be nice.
 							</p>
+						</b-card>
+					</b-collapse>
+				</b-card>
+
+				<!-- Capstone Card -->
+				<b-card>
+					<h5 class="mt-0">
+						<b-badge id="padding" variant="primary">Contributed</b-badge>Syllabus Editor/Course Commons
+					</h5>
+					<b-badge id="padding">C#</b-badge>
+					<b-badge id="padding">.NET Framework</b-badge>
+					<b-badge id="padding">Entity Framework</b-badge>
+					<p>The suite of applications that my team worked on for a capstone project at NTC.</p>
+					<b-button v-b-toggle="'capstone'">Project Details</b-button>
+					<b-collapse id="capstone">
+						<b-card>
+							<h6>Description</h6>
+							<p>
+								The syllabus editor is a .NET Framework MVC application that utilizes an API (Course Commons) that contains data used across multiple applications
+								and an application specific database managed with entity framework. The application allows instructors to log in with their credentials and manage
+								syllabi for the sections they are assigned to. The editor also uses .NET user identity and role based authentication that is used to manage access to
+								different parts of the application and store a unique identifier for the instructor accessing the application.
+							</p>
+							<p>
+								The course commons contains several applications that interact with a database containing records that are used in multiple NTC projects. The commons
+								applications include the dashboard, api, and adapter framework. The dashboard is the GUI component for the api which serves up data from the course commons
+								database. The adapter framework is a class library containing the models and utilities needed to interact with the api and is used in the syllabus editor and
+								dashboard.
+							</p>
+							<h6>My Contribution</h6>
+							<p>
+								Out team was tasked with bringing the syllabus editor application back to a working state after the overhaul of the backend data that resulted in the creation of
+								the course commons api. A lot of the work done to the project was in an effort to make sure the "frankenstein" melding of two data sources would result in usable models
+								for the application views.
+							</p>
+							<p>
+								We overhauled the population of the application specific database so that it was able to link to matching records form the api. Then we spent a large
+								amount of time trying to get an overly complex model wrapper to reference data from the api correctly. The wrapper made heavy use of generics and repository pattern and after
+								3 sprints of working on it we decided to remove it in favor of a view model approach.
+							</p>
+							<p>
+								The view models removed any direct data referencing to the api in favor of using models that would be populated by api data and a syllabus specific model object in the controller
+								actions. This ment that the syllabus models used were drastically simplified and the api data was no longer referenced in the editor outside of controller actions. This has
+								the added benefit of having a clear seperation of the api from the application which would prevent bugs from being introduced from development on either project that would change the
+								relationship between them.
+							</p>
+							<!--<h6>Lessons Learned</h6>
+							<p>Put something here idiot.</p>-->
 						</b-card>
 					</b-collapse>
 				</b-card>
