@@ -250,6 +250,32 @@
 						</b-card>
 					</b-collapse>
 				</b-card>
+
+				<!-- Data Analytics -->
+				<b-card>
+					<h5 class="mt-0">
+						<b-badge id="padding" variant="success">Complete</b-badge>Technology Survey Analysis
+					</h5>
+					<b-badge id="padding">SQL</b-badge>
+					<b-badge id="padding">MongoDB</b-badge>
+					<b-badge id="padding">R</b-badge>
+					<b-badge id="padding">Tableau</b-badge>
+					<p>An analysis of data collected about technology used by people. Sample size of 150 people.</p>
+					<b-button v-b-toggle="'analytics'">Project Details</b-button>
+					<b-collapse id="analytics">
+						<b-card>
+							<b-button
+								href="https://docs.google.com/document/d/1Fm1vV60z8V89O5O6AeFOXKYOvXgeG1oY/export?format=pdf"
+								size="sm"
+							>Download PDF</b-button>
+							<b-embed
+								type="iframe"
+								aspect="4by3"
+								src="https://docs.google.com/document/d/e/2PACX-1vT9rFmzmoilSCSpG4egvm3j7R3trBdi3Dy02zJeU9pftgsSFOUdHCDyWTMwX-Bqaw/pub?embedded=true"
+							></b-embed>
+						</b-card>
+					</b-collapse>
+				</b-card>
 			</div>
 		</b-jumbotron>
 	</div>
