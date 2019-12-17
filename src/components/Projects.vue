@@ -263,16 +263,34 @@
 					<p>An analysis of data collected about technology used by people. Sample size of 150 people.</p>
 					<b-button v-b-toggle="'analytics'">Project Details</b-button>
 					<b-collapse id="analytics">
-						<b-card>
-							<b-button
-								href="https://docs.google.com/document/d/1Fm1vV60z8V89O5O6AeFOXKYOvXgeG1oY/export?format=pdf"
-								size="sm"
-							>Download PDF</b-button>
-							<b-embed
-								type="iframe"
-								aspect="4by3"
-								src="https://docs.google.com/document/d/e/2PACX-1vT9rFmzmoilSCSpG4egvm3j7R3trBdi3Dy02zJeU9pftgsSFOUdHCDyWTMwX-Bqaw/pub?embedded=true"
-							></b-embed>
+						<b-card no-body>
+							<b-tabs pills card vertical>
+								<b-tab>
+									<template v-slot:title>
+										<div id="tabhead">Technical Document</div>
+									</template>
+									<b-button
+										href="https://docs.google.com/document/d/1Fm1vV60z8V89O5O6AeFOXKYOvXgeG1oY/export?format=pdf"
+										size="sm"
+									>Download PDF</b-button>
+									<b-embed
+										type="iframe"
+										aspect="4by3"
+										src="https://docs.google.com/document/d/e/2PACX-1vT9rFmzmoilSCSpG4egvm3j7R3trBdi3Dy02zJeU9pftgsSFOUdHCDyWTMwX-Bqaw/pub?embedded=true"
+									></b-embed>
+								</b-tab>
+								<b-tab>
+									<template v-slot:title>
+										<div id="tabhead">Video Presentation</div>
+									</template>
+									<b-embed
+										type="iframe"
+										aspect="16by9"
+										src="https://www.youtube.com/embed/CSQoESf13rg?rel=0"
+										allowfullscreen
+									></b-embed>
+								</b-tab>
+							</b-tabs>
 						</b-card>
 					</b-collapse>
 				</b-card>
@@ -297,6 +315,10 @@ export default {
 	background-color: mintcream;
 	color: black;
 	border-radius: 5px;
+}
+
+#tabhead {
+	color: black;
 }
 
 #padding {
